@@ -1,0 +1,15 @@
+.switch {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 30rem) {
+  .header {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (min-width: 51.25rem) {
+  .header {
+    margin: 0 0 5.375rem;
+  }
+}

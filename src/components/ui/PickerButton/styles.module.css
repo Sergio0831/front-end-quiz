@@ -1,0 +1,27 @@
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: var(--quiz-btn-bg);
+  color: inherit;
+  border-radius: 0.75rem;
+  column-gap: 1rem;
+  box-shadow: var(--shadow);
+  transition: background-color var(--base-transition), box-shadow var(--base-transition);
+}
+
+.btn:focus {
+  outline: 2px solid var(--purple);
+}
+
+@media screen and (min-width: 30rem) {
+  .btn {
+    border-radius: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 51.25rem) {
+  .btn {
+    padding: 1.25rem;
+  }
+}

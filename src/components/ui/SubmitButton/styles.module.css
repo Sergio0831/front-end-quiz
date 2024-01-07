@@ -1,0 +1,28 @@
+.btn {
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--purple);
+  border: none;
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: var(--fw-medium);
+  box-shadow: var(--shadow);
+  transition: background-color var(--base-transition), box-shadow var(--base-transition);
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #d394fa;
+}
+
+@media screen and (min-width: 30rem) {
+  .btn {
+    height: 5.75rem;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    font-size: 1.75rem;
+  }
+}

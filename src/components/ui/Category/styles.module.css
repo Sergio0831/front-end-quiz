@@ -1,0 +1,45 @@
+.category {
+  column-gap: 1rem;
+}
+
+.category__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.category__icon--html {
+  background-color: #fff1e9;
+}
+
+.category__icon--css {
+  background-color: #e0fdef;
+}
+
+.category__icon--js {
+  background-color: #ebf0ff;
+}
+
+.category__icon--accessibility {
+  background-color: #f6e7ff;
+}
+
+.category__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .category {
+    column-gap: 2rem;
+  }
+
+  .category__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .category__icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

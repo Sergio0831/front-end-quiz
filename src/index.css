@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300 400 500;
+  font-display: optional;
+  src: url(/fonts/Rubik-VariableFont_wght.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Rubik Italic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url(/fonts/Rubik-Italic-VariableFont_wght.woff2) format('woff2');
+}
+
+:root {
+  /* Colors */
+  --purple: #a729f5;
+  --navy: #313e51;
+  --grey-navy: #626c7f;
+  --light-grey: #f4f6fa;
+  --dark-navy: #3b4d66;
+  --light-bluish: #abc1e1;
+  --white: #fff;
+  --green: #26d782;
+  --red: #ee5454;
+
+  /* Fonts */
+  --font-regular: 'Rubik', system-ui, sans-serif;
+  --font-italic: 'Rubik Italic', system-ui, sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  /* Transition */
+  --base-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+
+  /* Light theme */
+  --body-bg: var(--light-grey);
+  --body-bg-pattern: #d9d9d9;
+  --text: var(--dark-navy);
+  --text-mutted: var(--grey-navy);
+  --quiz-btn-bg: var(--white);
+  --shadow: 0 1rem 2.5rem 0 rgba(143, 160, 193, 0.14);
+}
+
+/* Dark theme */
+.dark {
+  --body-bg: var(--dark-navy);
+  --body-bg-pattern: #2d3949;
+  --text: var(--white);
+  --text-mutted: var(--light-bluish);
+  --quiz-btn-bg: var(--navy);
+  --shadow: 0 1rem 2.5rem 0 rgba(49, 62, 81, 0.14);
+}
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  height: 100dvh;
+  font-family: var(--font-regular);
+  font-weight: var(--fw-regular);
+  line-height: 1.2;
+  background-color: var(--body-bg);
+  color: var(--text);
+  background-image: var(--body-bg-pattern);
+  background-repeat: no-repeat;
+  transition: color var(--base-transition), background-color var(--base-transition);
+}
+
+input,
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  display: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Typography classes */
+.display {
+  font-size: clamp(5.5rem, 5vw + 3rem, 9rem);
+  font-weight: var(--fw-medium);
+}
+
+.heading-l {
+  font-size: clamp(2.5rem, 2vw + 2rem, 4rem);
+}
+
+.heading-l--bold {
+  font-weight: var(--fw-medium);
+}
+
+.heading-l--regular {
+  font-weight: var(--fw-regular);
+}
+
+.heading-m {
+  font-size: clamp(1.25rem, 5vw, 2.25rem);
+  font-weight: var(--fw-medium);
+}
+
+.heading-s {
+  font-size: clamp(1.125rem, 5vw - 0.75rem, 1.75rem);
+  font-weight: var(--fw-medium);
+}
+
+.body-m {
+  font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
+}
+
+.body-s {
+  font-family: var(--font-italic);
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1.25rem);
+  color: var(--text-mutted);
+  transition: color var(--base-transition);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-y {
+  display: flex;
+  align-items: center;
+}
+
+.center-x {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  height: 100%;
+}

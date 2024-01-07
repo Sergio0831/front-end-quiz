@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  gap: 2.5rem;
+  padding: 2rem 0 0;
+}
+
+@media screen and (min-width: 30rem) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 51.25rem) {
+  .wrapper {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

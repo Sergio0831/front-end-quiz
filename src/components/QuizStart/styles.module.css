@@ -1,0 +1,12 @@
+.text {
+  max-width: 28.75rem;
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+@media screen and (min-width: 51.25rem) {
+  .text {
+    row-gap: 3rem;
+  }
+}
