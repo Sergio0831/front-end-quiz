@@ -3,9 +3,10 @@ import classes from './styles.module.css';
 
 type ProgressBarProps = {
   className?: string;
+  width: number;
 };
 
-const ProgressBar = ({ className, ...props }: ProgressBarProps) => {
+const ProgressBar = ({ className, width, ...props }: ProgressBarProps) => {
   const barClasses = clsx(
     {
       [classes.bar]: true,
@@ -15,7 +16,7 @@ const ProgressBar = ({ className, ...props }: ProgressBarProps) => {
 
   return (
     <div className={barClasses}>
-      <div className={classes.bar__progress} {...props}></div>
+      <div className={classes.bar__progress} {...props} style={{ width: `${width}%` }}></div>
     </div>
   );
 };

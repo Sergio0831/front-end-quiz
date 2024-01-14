@@ -17,10 +17,10 @@
 :root {
   /* Colors */
   --purple: #a729f5;
-  --navy: #313e51;
+  --navy: #3b4d66;
   --grey-navy: #626c7f;
   --light-grey: #f4f6fa;
-  --dark-navy: #3b4d66;
+  --dark-navy: #313e51;
   --light-bluish: #abc1e1;
   --white: #fff;
   --green: #26d782;
@@ -43,6 +43,7 @@
   --text: var(--dark-navy);
   --text-mutted: var(--grey-navy);
   --quiz-btn-bg: var(--white);
+  --error-msg: var(--red);
   --shadow: 0 1rem 2.5rem 0 rgba(143, 160, 193, 0.14);
 }
 
@@ -53,6 +54,7 @@
   --text: var(--white);
   --text-mutted: var(--light-bluish);
   --quiz-btn-bg: var(--navy);
+  --error-msg: var(--white);
   --shadow: 0 1rem 2.5rem 0 rgba(49, 62, 81, 0.14);
 }
 
@@ -131,12 +133,12 @@ ul {
 }
 
 .heading-s {
-  font-size: clamp(1.125rem, 5vw - 0.75rem, 1.75rem);
+  font-size: 1.25rem;
   font-weight: var(--fw-medium);
 }
 
 .body-m {
-  font-size: clamp(1.125rem, 1vw + 1rem, 1.5rem);
+  font-size: 1.125rem;
 }
 
 .body-s {
@@ -164,4 +166,11 @@ ul {
 
 #root {
   height: 100%;
+}
+
+@media screen and (min-width: 30rem) {
+  .heading-s,
+  .body-m {
+    font-size: 1.5rem;
+  }
 }

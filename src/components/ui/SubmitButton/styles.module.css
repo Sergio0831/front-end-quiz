@@ -14,7 +14,7 @@
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus-visible {
   background-color: #d394fa;
 }
 
