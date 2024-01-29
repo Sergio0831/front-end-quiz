@@ -10,7 +10,6 @@ import Category from './components/ui/Category';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('');
-
   const selectedQuiz = quizzes.find((quiz) => quiz.title === selectedCategory);
 
   const quizSubjects = quizzes.map((quiz) => ({

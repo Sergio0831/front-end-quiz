@@ -1,0 +1,17 @@
+.result {
+  display: grid;
+  justify-content: center;
+  row-gap: clamp(1rem, 0.4718rem + 2.2535vw, 2.5rem);
+  padding: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+  background-color: var(--quiz-btn-bg);
+  border-radius: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
+  margin: 0 0 clamp(0.75rem, 0.3099rem + 1.8779vw, 2rem);
+  box-shadow: var(--shadow);
+  transition: background-color var(--base-transition), box-shadow var(--base-transition);
+}
+
+.result__info {
+  display: grid;
+  row-gap: 1rem;
+  text-align: center;
+}
