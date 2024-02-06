@@ -7,6 +7,7 @@ import { quizzes } from './data/data';
 import Quiz from './components/Quiz';
 import classes from './App.module.css';
 import Category from './components/ui/Category';
+import ElipseIcon from './components/Icons/Elipse';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -22,19 +23,23 @@ function App() {
   };
 
   return (
-    <Wrapper>
-      <Header className={classes.header}>
-        {selectedQuiz && (
-          <Category category={{ title: selectedQuiz.title, icon: selectedQuiz.icon }} />
+    <>
+      <ElipseIcon className={`${classes.elipse} ${classes.elipse__top}`} />
+      <Wrapper>
+        <Header className={classes.header}>
+          {selectedQuiz && (
+            <Category category={{ title: selectedQuiz.title, icon: selectedQuiz.icon }} />
+          )}
+          <ThemeSwitchContainer className={classes.switch} />
+        </Header>
+        {selectedQuiz ? (
+          <Quiz quiz={selectedQuiz} />
+        ) : (
+          <QuizStart quizSubjects={quizSubjects} onQuizStart={handleQuizStart} />
         )}
-        <ThemeSwitchContainer className={classes.switch} />
-      </Header>
-      {selectedQuiz ? (
-        <Quiz quiz={selectedQuiz} />
-      ) : (
-        <QuizStart quizSubjects={quizSubjects} onQuizStart={handleQuizStart} />
-      )}
-    </Wrapper>
+      </Wrapper>
+      <ElipseIcon className={`${classes.elipse} ${classes.elipse__bottom}`} />
+    </>
   );
 }
 

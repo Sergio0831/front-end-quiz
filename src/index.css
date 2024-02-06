@@ -39,7 +39,7 @@
 
   /* Light theme */
   --body-bg: var(--light-grey);
-  --body-bg-pattern: #d9d9d9;
+  --body-bg-pattern: #edf1f9;
   --text: var(--dark-navy);
   --text-mutted: var(--grey-navy);
   --quiz-btn-bg: var(--white);
@@ -74,14 +74,14 @@ html {
   font-size: 100%;
 }
 body {
-  height: 100dvh;
   font-family: var(--font-regular);
   font-weight: var(--fw-regular);
   line-height: 1.2;
   background-color: var(--body-bg);
   color: var(--text);
-  background-image: var(--body-bg-pattern);
+  background-image: url('bg-desktop.svg');
   background-repeat: no-repeat;
+  background-size: cover;
   transition: color var(--base-transition), background-color var(--base-transition);
 }
 
@@ -167,8 +167,4 @@ ul {
 .center-x {
   display: flex;
   justify-content: center;
-}
-
-#root {
-  height: 100%;
 }

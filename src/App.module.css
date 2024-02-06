@@ -2,6 +2,14 @@
   margin-left: auto;
 }
 
+.elipse {
+  display: none;
+}
+
+.elipse circle {
+  transition: stroke var(--base-transition);
+}
+
 @media screen and (min-width: 30rem) {
   .header {
     margin: 0 0 3rem;
@@ -11,5 +19,22 @@
 @media screen and (min-width: 51.25rem) {
   .header {
     margin: 0 0 4.375rem;
+  }
+
+  .elipse {
+    position: absolute;
+    z-index: -1;
+    display: block;
+  }
+
+  .elipse__top {
+    top: 0;
+    left: 0;
+    rotate: 180deg;
+  }
+
+  .elipse__bottom {
+    bottom: 0;
+    right: 0;
   }
 }
