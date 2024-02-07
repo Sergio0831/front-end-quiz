@@ -30,7 +30,7 @@ const ElipseIcon = ({ className }: ElipseProps) => {
       fill="none"
       className={className}
       xmlns="http://www.w3.org/2000/svg">
-      <circle cx="488.5" cy="488.5" r="416.5" stroke="var(--body-bg-pattern)" stroke-width="144" />
+      <circle cx="488.5" cy="488.5" r="416.5" stroke="var(--body-bg-pattern)" strokeWidth="144" />
     </svg>
   );
 };

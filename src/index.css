@@ -79,9 +79,6 @@ body {
   line-height: 1.2;
   background-color: var(--body-bg);
   color: var(--text);
-  background-image: url('bg-desktop.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: color var(--base-transition), background-color var(--base-transition);
 }
 
