@@ -59,7 +59,7 @@ As I completed the challenge, I successfully accomplished the following:
 These achievements demonstrate my ability to create a user-friendly and interactive quiz application
 that caters to various user needs and preferences.
 
-### Screenshot
+### Screenshots
 
 #### Desktop
 
@@ -71,8 +71,8 @@ that caters to various user needs and preferences.
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [](https://ivcenko-quiz-app.netlify.app)
+- Solution URL: [https://your-solution-url.com](https://your-solution-url.com)
+- Live Site URL: [https://ivcenko-quiz-app.netlify.app](https://ivcenko-quiz-app.netlify.app)
 
 ## My process
 
